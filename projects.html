@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <link href = "NavBarStyle.css" rel = "stylesheet" type = "text/css">
 <!-- Navigation Menu -->
 <header>
     <div class="container">
       <h1 class="logo">Jamison Mercurio</h1>
-
-
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,6 +17,56 @@
   </header>
 
 
+<style>
+/* Formatting for Project Photos */
+  .projectPhoto {
+  border-radius: 25px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  width:150px;
+  height:100px;
+  }
+
+  .projectText {
+  position: relative;
+  top: 20px;
+  }
+
+  #projectsTable {
+
+    border-spacing: 50px;
+    /* border-bottom: 5px; */
+
+   /* Also add lines in between then */
+
+  }
+
+</style>
+
+<!-- Table Code that holds projects
+
+Note: Change text so that it's not just Zoyas! Also paste it into word to confirm there aren't any spelling/grammar mistakes
+ -->
+  <table id = "projectsTable" style="width:100%">
+
+    <tr>
+      <td><img src="8Puzzle.png" alt="8PuzzleImage" class="projectPhoto"></td>
+      <td class = "projectText"> 8puzzle solves a slider puzzle using the A* search algorithm. The puzzle is played on a n x n grid with n^2 - 1 square tiles labeled 1 through n^2 - 1, plus a blank square. The goal is to rearrange the tiles in row-major order with as few moves as possible. I implemented the program by creating a Board class that models a nxn board, calculates its hamming & manhattan distances, find possible neighboring boards, and determines whether a board is solvable. Then, I implemented the A* searching algorithm to solve the puzzle. </td>
+    </tr>
+    <tr>
+      <td><img src="SeamCarving.png" alt="SeamCarvingImage" class="projectPhoto"></td></td>
+    <td class = "projectText"> Seam Carving is an image resizing technique where the image is reduced in size by one pixel at a time. The algorithm finds a seam in the image with the lowest pixel energies so when the seam is removed, the image seems intact. I implemented the algorithm by first calculating the pixel of each seam, found the vertical seam of minimum total energy, and then removed the seam. To resize the image horizontally, i transposed the picture. </td>
+    </tr>
+    <tr>
+      <td><img src= "BurrowsWheeler.png" alt="BurrowsWheelerImage" class="projectPhoto"></td>
+      <td class = "projectText"> Burrows Wheeler implements the Burrows-Wheeler data compression algorithm and it outcompresses gzip and PKZIP. The algorithms utilizes three smaller algorithmic components. Burrows-Wheeler transform transforms a typical English text file to a text file in which sequences of same character occur near each other many times. Move-to-Front encoding converts the transfrom file into a text file in which certain characters appear more frequently than others. Finally, Huffman compression compresses the move-to-front file by encoding frquently occuring characters with short codewords and infrequently occuring characters with long codewords.</td>
+    </tr>
+    <tr>
+      <td><img src="Autocomplete.png" alt="AutocompleteImage" class="projectPhoto"></td>
+      <td class = "projectText"> Autocomplete finds all the terms beginning with a given prefix, in descending order by weight. It functions very similar to the search bar on the Google search engine. I implemented the program by sorting the terms by query string, using binary search to find all query strings that start with a given string, and sorting the matching terms by weight. </td>
+    </tr>
+  </table>
 
 
 
