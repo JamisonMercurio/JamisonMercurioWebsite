@@ -9,7 +9,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Platform</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -18,16 +18,6 @@
 
 
 <style>
-
-  .description1 {
-
-    position: relative;
-    text-align: left;
-      left: 140px;
-      top: 40px;
-
-
-  }
 /* Formatting for Project Photos */
   .projectPhoto {
   border-radius: 25px;
@@ -53,40 +43,28 @@
   }
 
 </style>
-<div class = "description1">
-    <p>
-        <b>Short Summary:</b> <br/> <br/>
-        I am a third year Informatics student, very interested in giving back to a university that has given me <br/>
-        so much over my time here. I’ve formed friendships and made so many memories at Edinburgh, whether <br/>
-        it was at Hive, Why Not, Southsider, or Pear Tree – not to mention the infamous pre’s I used to throw at Kincaid’s. <br/>
-        I also have many outside interests, including running, breakdancing, hiking, gaming, and SCUBA diving.
-        <br/>
-        <br/>
-        <br/>
-        
-        <b>Platform:</b> <br/>
-        I have put together a list of goals I will tackle as EUSA President, created based on a wide <br/>
-         variety of student feedback. Here are some of the ideas I will implement: <br/> <br/>
-        • Free Food and Drink: Unlimited haggis buffets in Teviot during Lounge Café hours, and bi-weekly whiskey <br/>
-          tastings free of charge throughout the semester. <br/> <br/>
-        • City Experiences: In order to help students experience Edinburgh’s history and culture, I’d like to subsidize <br/>
-          trips to various parts of the city. To that end, I will organize a giant end-of-term party in Edinburgh Castle, <br/>
-          with an open bar. <br/> <br/>
-        • Promoting Transparency: With classes, societies, and social lives, it’s hard for students to follow what is going on <br/>
-         at the EUSA officer level. Accordingly, I’ll organize an annual meet and greet with the EUSA Student President (me). <br/> <br/>
-        • Free Willy. <br/> <br/>
-        
-        These are just some of the many accomplishments I hope to achieve over the course of the year as your EUSA president,  <br/>
-        and I intend to update and prioritize this list accordingly based off of my conversations with fellow students.  <br/> <br/>
-        
-        I’m looking forward to talking to many more of you in the coming weeks ahead!
-        <br>
-        <br>
-        <br>
-        <br>
 
-    </p>
-</div>
+<!-- Table Code that holds projects
+
+Note: Change text so that it's not just Zoyas! Also paste it into word to confirm there aren't any spelling/grammar mistakes
+ -->
+  <table id = "projectsTable" style="width:100%">
+
+    <tr>
+      <td><img src="8Puzzle.png" alt="8PuzzleImage" class="projectPhoto"></td>
+      <td class = "projectText">8-puzzle solves a slider puzzle using the A* search algorithm. The puzzle is played on a n x n grid with n^2 - 1 square tiles labeled 1 through n^2 - 1, plus a blank square. The goal is to rearrange the tiles in row-major order with as few moves as possible. I implemented the program by creating a Board class that models a nxn board, calculates its hamming & manhattan distances, finds possible neighboring boards, and determines whether a board is solvable. Then, I implemented the A* searching algorithm to solve the puzzle efficiently. </td>
+    </tr>
+    <tr>
+      <td><img src="SeamCarving.png" alt="SeamCarvingImage" class="projectPhoto"></td></td>
+    <td class = "projectText"> Seam Carving is an image resizing technique where the image is reduced in size by one pixel at a time. The algorithm finds a seam in the image with the lowest pixel energies so when the seam is removed, the image seems intact and not distorted. I implemented the algorithm by first calculating the pixel energies of each seam, found the vertical seam of minimum total energy, and then removed the seam. To resize the image horizontally, I transposed the picture before running the same algorithm.  </tr>
+    <tr>
+      <td><img src= "BurrowsWheeler.png" alt="BurrowsWheelerImage" class="projectPhoto"></td>
+      <td class = "projectText"> Burrows Wheeler implements the Burrows-Wheeler data compression algorithm and it outcompresses gzip and PKZIP. The algorithms utilize three smaller algorithmic components, or steps. <u>Burrows-Wheeler Transform</u> transforms a typical English text file to a text file in which sequences of same character occur near each other many times. <u>Move-to-Front Encoding</u> converts the transform file into a text file in which certain characters appear more frequently than others. Finally, <u>Huffman compression</u> compresses the move-to-front file by encoding frequently occurring characters with short codewords and infrequently occurring characters with long codewords.  </tr>
+    <tr>
+      <td><img src="Autocomplete.png" alt="AutocompleteImage" class="projectPhoto"></td>
+      <td class = "projectText"> Autocomplete finds all the terms beginning with a given prefix, in descending order by weight. It functions very similar to the search bar on the Google search engine. I implemented the program by sorting the terms by query string, using binary search to find all query strings that start with a given string, and sorting the matching terms by weight. </td>
+    </tr>
+  </table>
 
 
 
