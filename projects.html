@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<!-- 
+Projects I'd like to list:
+See Less Negative News at FB
+Audio Drop-In at FB
+FDA Whitepaper
+FR in Public Safety Paper
+TigerEats
+XC Crusade
+Digital Information Kiosks
+
+Note: looks like the existing pictures are 
+height: 400 px 
+width: 600 px 
+
+Add publications section, and add that to linkedin too
+
+Put links on the pictures rather than in the text?
+
+-->
 
 <html>
 <link href = "NavBarStyle.css" rel = "stylesheet" type = "text/css">
@@ -9,7 +28,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html">Highlighted Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -34,20 +53,25 @@
   }
 
   #projectsTable {
-
     border-spacing: 50px;
-    /* border-bottom: 5px; */
-
-   /* Also add lines in between then */
-
   }
 
 </style>
 
-<!-- Table Code that holds projects
 
-Note: Change text so that it's not just Zoyas! Also paste it into word to confirm there aren't any spelling/grammar mistakes
- -->
+<table id = "projectsTable" style="width:100%">
+  <tr>
+    <td><img src="fda_logo.png" alt="FDA_Logo_Image" class="projectPhoto"></td>
+    <td class = "projectText"> AI In Healthcare: A Whitepaper for the FDA detailing benefit + drawbacks of ML in decision-support software. A link to the uploaded paper can be found <u><a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">here.</a></u> </td>
+  </tr>
+
+  <tr>
+    <td><img src="xc_crusade.jpeg" alt="xc_crusade_image" class="projectPhoto"></td>
+    <td class = "projectText"> The Cross Country Crusade: I founded a nonprofit organization where I regularly communicated with government officials, local and national sponsors, ran ad campaigns, and led a team of volunteers on race day. 100% of proceeds are donated to Camp Good Days, a Western New York-based charity that helps children with cancer and their families - and we have raised over $18,000 so far! I now hold an advisor role in the organization. </td>
+  </tr>
+</table>
+
+<!-- Old Table Code that holds projects 
   <table id = "projectsTable" style="width:100%">
 
     <tr>
@@ -65,6 +89,7 @@ Note: Change text so that it's not just Zoyas! Also paste it into word to confir
       <td class = "projectText"> Autocomplete finds all the terms beginning with a given prefix, in descending order by weight. It functions very similar to the search bar on the Google search engine. I implemented the program by sorting the terms by query string, using binary search to find all query strings that start with a given string, and sorting the matching terms by weight. </td>
     </tr>
   </table>
+  -->
 
 
 
