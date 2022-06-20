@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- 
 Projects I'd like to list:
-See Less Negative News at FB
+X See Less Negative News at FB
 Audio Drop-In at FB
-FDA Whitepaper
-FR in Public Safety Paper
+X FDA Whitepaper
+X FR in Public Safety Paper
 TigerEats
-XC Crusade
+X XC Crusade
 Digital Information Kiosks
 
 Note: looks like the existing pictures are 
@@ -18,6 +18,29 @@ Add publications section, and add that to linkedin too
 Put links on the pictures rather than in the text?
 
 -->
+<style>
+  /* Formatting for Project Photos */
+    .projectPhoto {
+    border-radius: 25px;
+    border: 2px solid #555;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    width:150px;
+    height:100px;
+    }
+  
+    .projectText {
+    position: relative;
+    top: 20px;
+    }
+  
+  /* todo: make this smaller, playing with this made the image and descriptions overlap */
+    .projectsTable {
+      border-spacing: 50px;
+    }
+  
+  </style>
 
 <html>
 <link href = "NavBarStyle.css" rel = "stylesheet" type = "text/css">
@@ -28,7 +51,7 @@ Put links on the pictures rather than in the text?
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Highlighted Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -36,61 +59,57 @@ Put links on the pictures rather than in the text?
   </header>
 
 
-<style>
-/* Formatting for Project Photos */
-  .projectPhoto {
-  border-radius: 25px;
-  position: relative;
-  left: 30px;
-  top: 20px;
-  width:150px;
-  height:100px;
-  }
+<h3 style="text-align: center;"> Highlighted Projects </h3>
 
-  .projectText {
-  position: relative;
-  top: 20px;
-  }
+<table class = "projectsTable" style="width:100%">
 
-  #projectsTable {
-    border-spacing: 50px;
-  }
-
-</style>
-
-
-<table id = "projectsTable" style="width:100%">
   <tr>
-    <td><img src="fda_logo.png" alt="FDA_Logo_Image" class="projectPhoto"></td>
-    <td class = "projectText"> AI In Healthcare: A Whitepaper for the FDA detailing benefit + drawbacks of ML in decision-support software. A link to the uploaded paper can be found <u><a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">here.</a></u> </td>
+    <td>
+      <img src="project_chiclets/see_less_negative_news.jpeg" alt="See_Less_Negative_News_Image" class="projectPhoto">
+    </a>
+    </td>
+    <td class = "projectText"> ‘See Less Negative News’ User Control - I spearheaded the product strategy, design, and engineering execution for this project at Meta Inc, as well as the many cross-functional POC approvals that were required in order to run a public test. This feature empowers users, via a unit in their feed, to actively remove negative, polarizing feed content. It does this by suggesting use of new topic-based filters, such as Politics, and Crime & Tragedy. Since its successful test and launch, it has been seen by approximately 20 million people, and 500,000+ users have utilized it to transform their Facebook News Tab experience. 
+    </td>
   </tr>
 
   <tr>
-    <td><img src="xc_crusade.jpeg" alt="xc_crusade_image" class="projectPhoto"></td>
+    <td>
+      <a href="https://www.facebook.com/XCCrusade/">
+      <img src="project_chiclets/xc_crusade.jpeg" alt="xc_crusade_image" class="projectPhoto">
+    </a>
+    </td>
     <td class = "projectText"> The Cross Country Crusade: I founded a nonprofit organization where I regularly communicated with government officials, local and national sponsors, ran ad campaigns, and led a team of volunteers on race day. 100% of proceeds are donated to Camp Good Days, a Western New York-based charity that helps children with cancer and their families - and we have raised over $18,000 so far! I now hold an advisor role in the organization. </td>
   </tr>
+
 </table>
 
-<!-- Old Table Code that holds projects 
-  <table id = "projectsTable" style="width:100%">
+<h3 style="text-align: center;"> Publications </h3>
 
-    <tr>
-      <td><img src="8Puzzle.png" alt="8PuzzleImage" class="projectPhoto"></td>
-      <td class = "projectText">8-puzzle solves a slider puzzle using the A* search algorithm. The puzzle is played on a n x n grid with n^2 - 1 square tiles labeled 1 through n^2 - 1, plus a blank square. The goal is to rearrange the tiles in row-major order with as few moves as possible. I implemented the program by creating a Board class that models a nxn board, calculates its hamming & manhattan distances, finds possible neighboring boards, and determines whether a board is solvable. Then, I implemented the A* searching algorithm to solve the puzzle efficiently. </td>
-    </tr>
-    <tr>
-      <td><img src="SeamCarving.png" alt="SeamCarvingImage" class="projectPhoto"></td></td>
-    <td class = "projectText"> Seam Carving is an image resizing technique where the image is reduced in size by one pixel at a time. The algorithm finds a seam in the image with the lowest pixel energies so when the seam is removed, the image seems intact and not distorted. I implemented the algorithm by first calculating the pixel energies of each seam, found the vertical seam of minimum total energy, and then removed the seam. To resize the image horizontally, I transposed the picture before running the same algorithm.  </tr>
-    <tr>
-      <td><img src= "BurrowsWheeler.png" alt="BurrowsWheelerImage" class="projectPhoto"></td>
-      <td class = "projectText"> Burrows Wheeler implements the Burrows-Wheeler data compression algorithm and it outcompresses gzip and PKZIP. The algorithms utilize three smaller algorithmic components, or steps. <u>Burrows-Wheeler Transform</u> transforms a typical English text file to a text file in which sequences of same character occur near each other many times. <u>Move-to-Front Encoding</u> converts the transform file into a text file in which certain characters appear more frequently than others. Finally, <u>Huffman compression</u> compresses the move-to-front file by encoding frequently occurring characters with short codewords and infrequently occurring characters with long codewords.  </tr>
-    <tr>
-      <td><img src="Autocomplete.png" alt="AutocompleteImage" class="projectPhoto"></td>
-      <td class = "projectText"> Autocomplete finds all the terms beginning with a given prefix, in descending order by weight. It functions very similar to the search bar on the Google search engine. I implemented the program by sorting the terms by query string, using binary search to find all query strings that start with a given string, and sorting the matching terms by weight. </td>
-    </tr>
-  </table>
-  -->
+<table class = "projectsTable" style="width:100%">
+  <tr>
+    <td>
+      <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">
+      <img src="project_chiclets/fda_logo.png" alt="FDA_Logo_Image" class="projectPhoto">
+    </a>
+    </td>
+    <td class = "projectText"> <i>Artificial Intelligence In Healthcare</i> - A 2020 whitepaper for the FDA detailing benefit + drawbacks of Machine Learning in decision-support software. A link to the uploaded document can be found 
+      <u>
+        <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">here</a></u>.
+    </td>
+  </tr>
 
+  <tr>
+    <td>
+      <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">
+      <img src="project_chiclets/fr_in_public_safety.png" alt="Facial Recognition Cover Image " class="projectPhoto">
+    </a>
+    </td>
+    <td class = "projectText"> <i>Facial Recognition in Public Safety</i> - A 2019 set of recommendations to legislators and police chiefs in New York and New Jersey regarding Facial Recognition technology. A link to the  document can be found 
+      <u>
+        <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">here</a></u>.
+    </td>
+  </tr>
+</table>
 
 
 </html>
