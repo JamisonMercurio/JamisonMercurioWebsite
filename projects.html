@@ -1,47 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-Projects I'd like to list:
-X See Less Negative News at FB
-Audio Drop-In at FB
-X FDA Whitepaper
-X FR in Public Safety Paper
-TigerEats
-X XC Crusade
-Digital Information Kiosks
-
-Note: looks like the existing pictures are 
-height: 400 px 
-width: 600 px 
-
-Add publications section, and add that to linkedin too
-
-Put links on the pictures rather than in the text?
-
--->
-<style>
-  /* Formatting for Project Photos */
-    .projectPhoto {
-    border-radius: 25px;
-    border: 2px solid #555;
-    position: relative;
-    left: 30px;
-    top: 20px;
-    width:150px;
-    height:100px;
-    }
-  
-    .projectText {
-    position: relative;
-    top: 20px;
-    }
-  
-  /* todo: make this smaller, playing with this made the image and descriptions overlap */
-    .projectsTable {
-      border-spacing: 50px;
-    }
-  
-  </style>
-
 <html>
 <link href = "NavBarStyle.css" rel = "stylesheet" type = "text/css">
 <!-- Navigation Menu -->
@@ -51,65 +8,91 @@ Put links on the pictures rather than in the text?
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li ><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+    <style>
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .flex-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
 
+  .flexboxPhoto {
+    border-radius: 25px;
+    border: 2px solid #555;
+    width:150px;
+    height:100px; 
+    }
+
+    .flexItem {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+</style>
+  
 <h3 style="text-align: center;"> Highlighted Projects </h3>
 
-<table class = "projectsTable" style="width:100%">
+  <div class="flex-table">
+    <div class="flex-row"> 
+      <div class="flexItem">
+      <img src="project_chiclets/see_less_negative_news.jpeg" alt="See_Less_Negative_News_Image" class="flexboxPhoto">
+      </div>
+        <div class="flexItem"> ‘See Less Negative News’ User Control - I spearheaded the product strategy, design, and engineering execution for this project at Meta Inc, as well as the many cross-functional POC approvals that were required in order to run a public test. This feature empowers users, via a unit in their feed, to actively remove negative, polarizing feed content. It does this by suggesting use of new topic-based filters, such as Politics, and Crime & Tragedy. Since its successful test and launch, it has been seen by approximately 20 million people, and 500,000+ users have utilized it to transform their Facebook News Tab experience.
+        </div>
+    </div>
+    <div class="flex-row"> 
+      <div class="flexItem">
+        <a href="https://www.facebook.com/XCCrusade/">
+          <img src="project_chiclets/xc_crusade.jpeg" alt="xc_crusade_image" class="flexboxPhoto">
+        </a>
+      </div>
+        <div class="flexItem"> The Cross Country Crusade 5K: I founded a nonprofit organization where I regularly communicated with government officials, local and national sponsors, ran ad campaigns, and led a team of volunteers on race day. 100% of proceeds are donated to Camp Good Days, a Western New York-based charity that helps children with cancer and their families - and we have raised over $18,000 so far! I now hold an advisor role in the organization.
+        </div>
+    </div>
+  </div>
 
-  <tr>
-    <td>
-      <img src="project_chiclets/see_less_negative_news.jpeg" alt="See_Less_Negative_News_Image" class="projectPhoto">
-    </a>
-    </td>
-    <td class = "projectText"> ‘See Less Negative News’ User Control - I spearheaded the product strategy, design, and engineering execution for this project at Meta Inc, as well as the many cross-functional POC approvals that were required in order to run a public test. This feature empowers users, via a unit in their feed, to actively remove negative, polarizing feed content. It does this by suggesting use of new topic-based filters, such as Politics, and Crime & Tragedy. Since its successful test and launch, it has been seen by approximately 20 million people, and 500,000+ users have utilized it to transform their Facebook News Tab experience. 
-    </td>
-  </tr>
+  <h3 style="text-align: center;"> Publications </h3>
 
-  <tr>
-    <td>
-      <a href="https://www.facebook.com/XCCrusade/">
-      <img src="project_chiclets/xc_crusade.jpeg" alt="xc_crusade_image" class="projectPhoto">
-    </a>
-    </td>
-    <td class = "projectText"> The Cross Country Crusade: I founded a nonprofit organization where I regularly communicated with government officials, local and national sponsors, ran ad campaigns, and led a team of volunteers on race day. 100% of proceeds are donated to Camp Good Days, a Western New York-based charity that helps children with cancer and their families - and we have raised over $18,000 so far! I now hold an advisor role in the organization. </td>
-  </tr>
-
-</table>
-
-<h3 style="text-align: center;"> Publications </h3>
-
-<table class = "projectsTable" style="width:100%">
-  <tr>
-    <td>
-      <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">
-      <img src="project_chiclets/fda_logo.png" alt="FDA_Logo_Image" class="projectPhoto">
-    </a>
-    </td>
-    <td class = "projectText"> <i>Artificial Intelligence In Healthcare</i> - A 2020 whitepaper for the FDA detailing benefit + drawbacks of Machine Learning in decision-support software. A link to the uploaded document can be found 
-      <u>
-        <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">here</a></u>.
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">
-      <img src="project_chiclets/fr_in_public_safety.png" alt="Facial Recognition Cover Image " class="projectPhoto">
-    </a>
-    </td>
-    <td class = "projectText"> <i>Facial Recognition in Public Safety</i> - A 2019 set of recommendations to legislators and police chiefs in New York and New Jersey regarding Facial Recognition technology. A link to the  document can be found 
-      <u>
-        <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">here</a></u>.
-    </td>
-  </tr>
-</table>
-
-
+  <div class="flex-table">
+    <div class="flex-row"> 
+      <div class="flexItem">
+        <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">
+          <img src="project_chiclets/fda_logo.png" alt="FDA_Logo_Image" class="flexboxPhoto">
+        </a>
+      </div>
+        <div class="flexItem"> <i>Artificial Intelligence In Healthcare</i> - A 2020 whitepaper for the FDA detailing benefit + drawbacks of Machine Learning in decision-support software. A link to the uploaded document can be found 
+          <u>
+            <a href="https://www.regulations.gov/document/FDA-2017-D-6569-0112">here</a></u>.
+        </div>
+    </div>
+    <div class="flex-row"> 
+      <div class="flexItem">
+        <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">
+          <img src="project_chiclets/fr_in_public_safety.png" alt="Facial Recognition Cover Image " class="flexboxPhoto">
+        </a>
+      </div>
+        <div class="flexItem"><i>Facial Recognition in Public Safety</i> - A 2019 set of recommendations to legislators and police chiefs in New York and New Jersey regarding Facial Recognition technology. A link to the  document can be found 
+          <u>
+            <a href="https://jamisonmercurio.com/Mercurio_FacialRecognitionInPublicSafety.pdf">here</a></u>.
+        </div>
+    </div>
+  </div>
 </html>

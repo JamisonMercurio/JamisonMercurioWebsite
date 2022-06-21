@@ -34,14 +34,13 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex; 
 }
 
 nav li {
-  display: inline-block;
   margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
+ padding-top: 30px;
+  position: relative; 
 }
 
 nav a {
