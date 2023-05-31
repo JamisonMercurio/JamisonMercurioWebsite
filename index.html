@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- 
+  <!-- 
 Wishlist of updates I should make at some point:
 
 Whole site: 
@@ -13,22 +13,22 @@ Projects Page
 * Add more details to the project descriptions
 -->
 
-<head>
-  <title> Jamison Mercurio's Homepage </title>
+  <head>
+    <title>Jamison Mercurio's Homepage</title>
 
-<link href = "NavBarStyle.css" rel = "stylesheet" type = "text/css">
+    <link href="NavBarStyle.css" rel="stylesheet" type="text/css" />
 
-  <!--- Mobile Friendly Line -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--- Mobile Friendly Line -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    div.flexboxAllComponents {
+    <style>
+      div.flexboxAllComponents {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
+      }
 
-    div.flexboxHeadshotLevel {
+      div.flexboxHeadshotLevel {
         display: flex;
         padding-top: 50px;
         padding-left: 20px;
@@ -36,24 +36,24 @@ Projects Page
         padding-bottom: 0px;
         flex-direction: column;
         align-items: center;
-    }
+      }
 
-    div.flexboxGithubAndLinkedIn {
+      div.flexboxGithubAndLinkedIn {
         display: flex;
         align-items: center;
-    }
+      }
 
-    .headshot { /* todo: center the photo under my header name */
+      .headshot {
+        /* todo: center the photo under my header name */
         max-width: 100%;
-    height: auto;
-    border-radius: 25px;
-    }
-   
-  </style>
-</head>
+        height: auto;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
 
-<!-- Navigation Menu -->
-<header>
+  <!-- Navigation Menu -->
+  <header>
     <div class="container">
       <h1 class="logo">Jamison Mercurio</h1>
       <nav>
@@ -66,36 +66,55 @@ Projects Page
     </div>
   </header>
 
-<body>
-    <div class = "flexboxAllComponents">
-        <div class= "flexboxHeadshotLevel" style="max-width:300px; max-height:300px;">
-            <img src="headshot.jpeg" alt="Jamison Mercurio Headshot" class="headshot">
+  <body>
+    <div class="flexboxAllComponents">
+      <div
+        class="flexboxHeadshotLevel"
+        style="max-width: 300px; max-height: 300px"
+      >
+        <img
+          src="headshot.jpeg"
+          alt="Jamison Mercurio Headshot"
+          class="headshot"
+        />
+      </div>
+
+      <div class="flexboxHeadshotLevel">
+        <div>
+          <p style="text-align: center">
+            I’m a former Facebook software engineer and Princeton graduate with
+            proven leadership experience, <br />
+            community involvement, and a product management skillset, seeking to
+            apply my abilities <br />
+            as a healthtech entrepreneur.
+          </p>
         </div>
 
-        <div class= "flexboxHeadshotLevel">
-                <div>
-                    <p style="text-align: center;">
-                      I’m a former Facebook software engineer and Princeton graduate with proven leadership experience, <br> 
-                      community involvement, and a product management skillset, seeking to apply my abilities <br> as a healthtech entrepreneur.
-                    </p>
-                </div>
-
-                <div class = "flexboxGithubAndLinkedIn">
-                    <a href='https://www.linkedin.com/in/jamison-mercurio?trk=profile-badge'>
-                        <img src="LinkedIn.png" alt="LinkedIn" style= "width: 60px; height: 60px; padding-right: 10px;">
-                    </a>
-                    <a href='https://github.com/JamisonMercurio'>
-                        <img src="Github1.png" alt="Github"  style= "width: 42px; height: 42px; padding-left: 10px;">
-                    </a>
-                </div>
-
-                <div>
-                    <p style="text-align: center;">
-                        <a href="https://jamisonmercurio.com/Jamie%20Mercurio%20Resume.pdf"><b>My Resume</b></a>
-                        </p>
-                </div>
+        <div class="flexboxGithubAndLinkedIn">
+          <a
+            href="https://www.linkedin.com/in/jamison-mercurio?trk=profile-badge"
+          >
+            <img
+              src="LinkedIn.png"
+              alt="LinkedIn"
+              style="width: 60px; height: 60px; padding-right: 10px"
+            />
+          </a>
+          <a href="https://github.com/JamisonMercurio">
+            <img
+              src="Github1.png"
+              alt="Github"
+              style="width: 42px; height: 42px; padding-left: 10px"
+            />
+          </a>
         </div>
 
+        <div>
+          <p style="text-align: center">
+            <a href="/Jamie%20Mercurio%20Resume.pdf"><b>My Resume</b></a>
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
