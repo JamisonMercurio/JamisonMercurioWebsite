@@ -93,7 +93,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4 mt-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/JamisonMercurio"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -107,7 +107,7 @@ export default function Home() {
                     </Button>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/jamison-mercurio"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -151,11 +151,11 @@ export default function Home() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2024 Jamison Mercurio. All rights reserved.
+            © 2025 Jamison Mercurio. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/JamisonMercurio"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -165,7 +165,7 @@ export default function Home() {
               </Button>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/jamison-mercurio"
               target="_blank"
               rel="noopener noreferrer"
             >
