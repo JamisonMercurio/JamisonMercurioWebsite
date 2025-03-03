@@ -7,6 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Ensure Next.js creates an index.html in the root
+  trailingSlash: true,
 };
 
 export default nextConfig;
