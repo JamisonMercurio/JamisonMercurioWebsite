@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Next.js local build artifacts (for dev/SSR)
+.next/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log
+yarn-error.log
